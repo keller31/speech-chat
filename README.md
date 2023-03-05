@@ -1,7 +1,7 @@
 # speech-chat
 基于 NODE.js 的 OPENAI 语音对话机器人。
 
-##相关技术
+## 相关技术
 - 使用了百度AI的语音转文本和文本转语音；
 - 使用了OPENAI 的 gpt-3.5-turbo模型来进行对话内容生成（附带上下文内容）；
 - 使用了 mic-to-speech 来监听麦克风事件，以便处罚对话；
