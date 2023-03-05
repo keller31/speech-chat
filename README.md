@@ -8,14 +8,15 @@
 
 
 ### 初始化
-1. 获取代码
+1. 安装依赖工具包
+```
+Linux：安装ALSA工具（sudo apt-get install alsa-utils）
+Window：安装SoX工具（https://sourceforge.net/projects/sox/files/sox/）
+Mac OS：安装SoX工具（brew install sox）
+```
+2. 获取代码
 ```
 git clone https://github.com/keller31/speech-chat.git 
-```
-
-2. 复制 env
-```
-cp ./.env.example ./.env
 ```
 
 3. 安装 npm 依赖
@@ -23,15 +24,16 @@ cp ./.env.example ./.env
 npm install
 ```
 4. 修改配置文件
-修改.env 文件中的配置，填入你在openai申请的key以及百度云平台的应用key信息；
+```
+cp ./.env.example ./.env 
+```
+然后修改.env 文件中的配置信息，填入你在openai申请的key以及百度云平台的应用key信息；
 
 
 ### 运行
 ```
 node ./src/index
 ```
-
-
 
 ### 相关文档
 
@@ -40,6 +42,8 @@ openai api https://platform.openai.com/docs/guides/completion/introduction
 baidu 语音技术 相关文档 https://cloud.baidu.com/doc/SPEECH/index.html
 
 mic-to-speech 文档 https://github.com/natelewis/mic-to-speech
+
+Sox工具 https://sox.sourceforge.net/
 
 ### 其他
 此项目仅为个人学习娱乐之作品，由于本人对node.js并不太了解 代码中难免出现各种错误，如有问题欢迎大家指正！
